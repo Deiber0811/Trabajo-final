@@ -1928,10 +1928,8 @@
                             <span class="text-gray-600"></span>
                         </p>
 
-                        <button class="menu">
-                            
-                            <a id="Detall" href="#"
-                                class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                        <button id="ListHab">                            
+                            <a class="flex shadow-md border border-gray-400 items-center py-2 px-4 text-gray-950 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
                                 <i class="ri-file-list-2-line mr-3 text-lg"></i>
                                 <span class="text-sm">Listado</span>
                             </a>
@@ -1943,7 +1941,7 @@
                         <p class="text-base text-gray-400 line-through">300.000</p>
                     </div>
 
-                    <p class="mt-4 text-gray-600">Es un hotel de cuatro estrellas situado en el corazón de lorica,
+                    <p class="text-justify mt-4 text-gray-600">Es un hotel de cuatro estrellas situado en el corazón de lorica,
                         a solo 10 minutos del aeropuerto y cerca de las principales atracciones turísticas de la
                         ciudad.
                         El hotel ofrece habitaciones amplias y confortables, equipadas con aire acondicionado,
@@ -1957,8 +1955,8 @@
         <!-- CONTENT DETALLES -->
 
         
-
-        <div id="detalles" class="p-6" hidden>
+        <!-- CONTENT DETALLES HABITACIONES -->
+        <div id="DetallesHab" class="p-6" hidden>
             <div class="p-6 text-2xl mb-8">Listado general de habitaciones</div>
     
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -2000,9 +1998,9 @@
                             </td>
                             
                             <td class="px-6 py-4">
-                                <a id="hotel1" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Eliminar
+                                <a id="" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Eliminar
                                 </a>
-                                <a id="hotel1" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Editar
+                                <a id="E1" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Editar
                                 </a>
                             </td>
                             
@@ -2024,7 +2022,7 @@
                              <td class="px-6 py-4">
                                  <a id="hotel2" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Eliminar
                                  </a>
-                                 <a id="hotel2" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Editar
+                                 <a id="E2" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Editar
                                  </a>
                              </td>
                         </tr>
@@ -2046,7 +2044,7 @@
                              <td class="px-6 py-4">
                                  <a id="hotel13" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Eliminar
                                  </a>
-                                 <a id="hotel3" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Editar
+                                 <a id="E3" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Editar
                                  </a>
                              </td>
                         </tr>
@@ -2068,7 +2066,7 @@
                              <td class="px-6 py-4">
                                  <a id="hotel4" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Eliminar
                                  </a>
-                                 <a id="hotel4" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Editar
+                                 <a id="E4" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Editar
                                  </a>
                              </td>
                             
@@ -2091,18 +2089,18 @@
                              <td class="px-6 py-4">
                                  <a id="hotel5" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Eliminar
                                  </a>
-                                 <a id="hotel5" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Editar
+                                 <a id="E5" class="px-6 py-4 font-semibold text-gray-900 dark:text-white">Editar
                                  </a>
                              </td>
                         </tr>
                     </tbody>
                 </table>
-                <button class="menu">
+                <button class="p-3">
                             
                     <a id="Crearh"
-                        class="flex items-center py-2 px-4 text-gray-300 hover:bg-gray-950 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                        class="flex shadow-md border border-gray-400 items-center py-2 px-4 text-gray-600 hover:bg-gray-950 hover:text-gray-100 rounded-xl group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
                         <i class="ri-file-list-2-line mr-3 text-lg"></i>
-                        <span class="text-sm">Crear</span>
+                        <span class="text-base">Crear</span>
                     </a>
               
             </button>
@@ -2148,7 +2146,53 @@
                 </div>
             </div>
         </div>
- 
+        <!-- CONTENT DETALLES HABITACIONES -->
+        
+        <!-- CONTENT EDITAR HABITACIONES -->
+        <div id="EditarHab" class="p-10" hidden>
+            <div class="text-2xl mb-8">Editar Habitaciones</div>
+    
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <form class="p-3 w-full text-sm text-left text-black-500 bg-green-500:text-gray-400 shadow-xl">
+                    <div class="grid gap-6 mb-6 md:grid-cols-2">
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">NIT*</label>
+                            <input  type="text" id="nit"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Codigo de habitación" required="">
+                            <p class="mt-2 text-sm text-red-600 dark:text-red-500">El valor ingresado no es
+                                valido</p>
+                        </div>
+                        <div>
+                            <label for="last_name"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Nombre del
+                                Hotel*</label>
+                            <input value="" type="text" id="nombre"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required="" placeholder="Tipo de habitación">
+                            <p class="mt-2 text-sm text-red-600 dark:text-red-500">El campo es obligatorio</p>
+                        </div>
+                    </div>
+                    <div class="grid gap-6 mb-6 md:grid-cols-3">
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-900">Ciudad</label>
+                            <input value="" type="text" id="ciudad"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required="" placeholder="Acomodación">
+                            <p class="mt-2 text-sm text-red-600 dark:text-red-500">El campo es obligatorio</p>
+                        </div>
+                        
+                    </div>
+                    <button id="atras"
+                        class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Atrás
+                    </button>
+                    <button type="submit"
+                        class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- CONTENT EDITAR HABITACIONES -->
 
     </main>
     <!-- end: Main -->
@@ -2170,18 +2214,24 @@
         var hotel3 = document.getElementById("hotel3");
         var hotel4 = document.getElementById("hotel4");
         var hotel5 = document.getElementById("hotel5");
-        var Dt = document.getElementById("Detall");
-        var ch = document.getElementById("Crearh");
+        var ListHab = document.getElementById("ListHab");
+        var E1 = document.getElementById("E1");
+        var E2 = document.getElementById("E2");
+        var E3 = document.getElementById("E3");
+        var E4 = document.getElementById("E4");
+        var E5 = document.getElementById("E5");
+        var atras = document.getElementById("atras");
 
         // var inf = document.getElementById("inf");
-        var detalles = document.getElementById("detalles");
         var listado = document.getElementById("listado");
         var crear = document.getElementById("crear");
         var editar = document.getElementById("editar");
         var eliminar = document.getElementById("eliminar");
         var detallesH1 = document.getElementById("detallesH1");
         var footer = document.getElementById("footer");
-        var crearhab = document.getElementById("crearhab");
+        var DetallesHab = document.getElementById("DetallesHab");
+        var EditarHab = document.getElementById("EditarHab");
+
         // Añadir un evento de clic al enlace
         prueba.addEventListener("click", function (e) {
             // Evitar que el enlace se comporte como un enlace normal
@@ -2194,8 +2244,8 @@
             eliminar.hidden = true;
             detallesH1.hidden = true;
             footer.hidden = true;
-            crearhab.hidden = true;
-            detalles.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = true;
         });
 
         ml.addEventListener("click", function (e) {
@@ -2208,25 +2258,11 @@
             editar.hidden = true;
             eliminar.hidden = true;
             detallesH1.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = true;
             footer.hidden = false;
-            crearhab.hidden = true;
-            detalles.hidden = true;
         });
-
-        Dt.addEventListener("click", function (e){
-            e.preventDefault();
-            
-            
-            crear.hidden = true;
-            editar.hidden = true;
-            eliminar.hidden = true;
-            detallesH1.hidden = true;
-            footer.hidden = false;
-            crearhab.hidden = true;
-            detalles.hidden = false;
-
-        });
-
+    
         mc.addEventListener("click", function (e) {
             // Evitar que el enlace se comporte como un enlace normal
             e.preventDefault();
@@ -2237,9 +2273,9 @@
             editar.hidden = true;
             eliminar.hidden = true;
             detallesH1.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = true;
             footer.hidden = false;
-            crearhab.hidden = true;
-            detalles.hidden = true;
         });
 
         me.addEventListener("click", function (e) {
@@ -2251,10 +2287,10 @@
             crear.hidden = true;
             editar.hidden = false;
             eliminar.hidden = true;
-            detallesH1.hidden = true;
-            footer.hidden = false;
-            crearhab.hidden = true;
-            detalles.hidden = true;
+            detallesH1.hidden = true;        
+            DetallesHab.hidden = true;
+            EditarHab.hidden = true;
+            footer.hidden = false;    
         });
 
         mel.addEventListener("click", function (e) {
@@ -2267,9 +2303,9 @@
             editar.hidden = true;
             eliminar.hidden = false;
             detallesH1.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = true;
             footer.hidden = false;
-            crearhab.hidden = true;
-            detalles.hidden = true;
         });
 
         hotel1.addEventListener("click", function (e) {
@@ -2281,10 +2317,10 @@
             crear.hidden = true;
             editar.hidden = true;
             eliminar.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = true;
             detallesH1.hidden = false;
             footer.hidden = false;
-            crearhab.hidden = true;
-            detalles.hidden = true;
         });
 
         hotel2.addEventListener("click", function (e) {
@@ -2295,11 +2331,11 @@
             listado.hidden = true;
             crear.hidden = true;
             editar.hidden = true;
-            eliminar.hidden = true;
+            eliminar.hidden = true;        
+            DetallesHab.hidden = true;
+            EditarHab.hidden = true;
             detallesH1.hidden = false;
-            footer.hidden = false;
-            crearhab.hidden = true;
-            detalles.hidden = true;
+            footer.hidden = false;    
         });
 
         hotel3.addEventListener("click", function (e) {
@@ -2310,11 +2346,11 @@
             listado.hidden = true;
             crear.hidden = true;
             editar.hidden = true;
-            eliminar.hidden = true;
+            eliminar.hidden = true;       
+            DetallesHab.hidden = true;
+            EditarHab.hidden = true;
             detallesH1.hidden = false;
-            footer.hidden = false;
-            crearhab.hidden = true;
-            detalles.hidden = true;
+            footer.hidden = false;     
         });
 
         hotel4.addEventListener("click", function (e) {
@@ -2326,10 +2362,10 @@
             crear.hidden = true;
             editar.hidden = true;
             eliminar.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = true;
             detallesH1.hidden = false;
             footer.hidden = false;
-            crearhab.hidden = true;
-            detalles.hidden = true;
         });
 
         hotel5.addEventListener("click", function (e) {
@@ -2340,25 +2376,116 @@
             listado.hidden = true;
             crear.hidden = true;
             editar.hidden = true;
-            eliminar.hidden = true;
+            eliminar.hidden = true;    
+            DetallesHab.hidden = true;
             detallesH1.hidden = false;
-            footer.hidden = false;
-            crearhab.hidden = true;
-            detalles.hidden = true;
+            footer.hidden = false;        
+            EditarHab.hidden = true;
         });
-        ch.addEventListener("click", function (e) {
+        
+        ListHab.addEventListener("click", function (e) {
             // Evitar que el enlace se comporte como un enlace normal
             e.preventDefault();
             // Cambiar el atributo hidden del primer elemento a false
-            // inf.hidden = false;
+            // inf.hidden = true;
             listado.hidden = true;
             crear.hidden = true;
             editar.hidden = true;
             eliminar.hidden = true;
             detallesH1.hidden = true;
-            footer.hidden = true;
-            crearhab.hidden = false;
-            detalles.hidden = true;
+            EditarHab.hidden = true;
+            DetallesHab.hidden = false;
+            footer.hidden = false;
+        });
+
+        E1.addEventListener("click", function (e) {
+            // Evitar que el enlace se comporte como un enlace normal
+            e.preventDefault();
+            // Cambiar el atributo hidden del primer elemento a false
+            // inf.hidden = true;
+            listado.hidden = true;
+            crear.hidden = true;
+            editar.hidden = true;
+            eliminar.hidden = true;
+            detallesH1.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = false;
+            footer.hidden = false;
+        });
+
+        E2.addEventListener("click", function (e) {
+            // Evitar que el enlace se comporte como un enlace normal
+            e.preventDefault();
+            // Cambiar el atributo hidden del primer elemento a false
+            // inf.hidden = true;
+            listado.hidden = true;
+            crear.hidden = true;
+            editar.hidden = true;
+            eliminar.hidden = true;
+            detallesH1.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = false;
+            footer.hidden = false;
+        });
+
+        E3.addEventListener("click", function (e) {
+            // Evitar que el enlace se comporte como un enlace normal
+            e.preventDefault();
+            // Cambiar el atributo hidden del primer elemento a false
+            // inf.hidden = true;
+            listado.hidden = true;
+            crear.hidden = true;
+            editar.hidden = true;
+            eliminar.hidden = true;
+            detallesH1.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = false;
+            footer.hidden = false;
+        });
+
+        E4.addEventListener("click", function (e) {
+            // Evitar que el enlace se comporte como un enlace normal
+            e.preventDefault();
+            // Cambiar el atributo hidden del primer elemento a false
+            // inf.hidden = true;
+            listado.hidden = true;
+            crear.hidden = true;
+            editar.hidden = true;
+            eliminar.hidden = true;
+            detallesH1.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = false;
+            footer.hidden = false;
+        });
+
+        E5.addEventListener("click", function (e) {
+            // Evitar que el enlace se comporte como un enlace normal
+            e.preventDefault();
+            // Cambiar el atributo hidden del primer elemento a false
+            // inf.hidden = true;
+            listado.hidden = true;
+            crear.hidden = true;
+            editar.hidden = true;
+            eliminar.hidden = true;
+            detallesH1.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = false;
+            footer.hidden = false;
+        });
+
+        atras.addEventListener("click", function (e) {
+            // Evitar que el enlace se comporte como un enlace normal
+            e.preventDefault();
+            // Cambiar el atributo hidden del primer elemento a false
+            // inf.hidden = true;
+            listado.hidden = true;
+            crear.hidden = true;
+            editar.hidden = true;
+            eliminar.hidden = true;
+            detallesH1.hidden = true;
+            DetallesHab.hidden = false;
+            EditarHab.hidden = true;
+            footer.hidden = false;
         });
     </script>
 
