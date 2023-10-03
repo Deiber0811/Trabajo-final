@@ -2095,10 +2095,9 @@
                         </tr>
                     </tbody>
                 </table>
-                <button class="p-3">
+                <button id="crearhab" class="p-3">
                             
-                    <a id="Crearh"
-                        class="flex shadow-md border border-gray-400 items-center py-2 px-4 text-gray-600 hover:bg-gray-950 hover:text-gray-100 rounded-xl group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                    <a class="flex shadow-md border border-gray-400 items-center py-2 px-4 text-gray-600 hover:bg-gray-950 hover:text-gray-100 rounded-xl group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
                         <i class="ri-file-list-2-line mr-3 text-lg"></i>
                         <span class="text-base">Crear</span>
                     </a>
@@ -2106,47 +2105,50 @@
             </button>
             </div>
 
-            <div id="crearhab" class="p-10" hidden>
-                <div class="text-2xl mb-8">Crear Habitaciones</div>
-        
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <form class="p-3 w-full text-sm text-left text-black-500 bg-green-500:text-gray-400 shadow-xl">
-                        <div class="grid gap-6 mb-6 md:grid-cols-2">
-                            <div>
-                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NIT*</label>
-                                <input  type="text" id="nit"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Codigo de habitación" required="">
-                                <p class="mt-2 text-sm text-red-600 dark:text-red-500">El valor ingresado no es
-                                    valido</p>
-                            </div>
-                            <div>
-                                <label for="last_name"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre del
-                                    Hotel*</label>
-                                <input value="" type="text" id="nombre"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    required="" placeholder="Tipo de habitación">
-                                <p class="mt-2 text-sm text-red-600 dark:text-red-500">El campo es obligatorio</p>
-                            </div>
-                        </div>
-                        <div class="grid gap-6 mb-6 md:grid-cols-3">
-                            <div>
-                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ciudad</label>
-                                <input value="" type="text" id="ciudad"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    required="" placeholder="Acomodación">
-                                <p class="mt-2 text-sm text-red-600 dark:text-red-500">El campo es obligatorio</p>
-                            </div>
-                            
-                        </div>
-                        <button type="submit"
-                            class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-                    </form>
-                </div>
-            </div>
         </div>
         <!-- CONTENT DETALLES HABITACIONES -->
+
+        <!-- CONTENT CREAR HABITACIÓN -->
+        <div id="crearh" class="p-10" hidden>
+            <div id="editar" class="text-2xl mb-8">Crear Habitaciones</div>
+    
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <form class="p-3 w-full text-sm text-left text-black-500 bg-green-500:text-gray-400 shadow-xl">
+                    <div class="grid gap-6 mb-6 md:grid-cols-2">
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">NIT*</label>
+                            <input  type="text" id="nit"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="Codigo de habitación" required="">
+                            <p class="mt-2 text-sm text-red-600 dark:text-red-500">El valor ingresado no es
+                                valido</p>
+                        </div>
+                        <div>
+                            <label for="last_name"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre del
+                                Hotel*</label>
+                            <input value="" type="text" id="nombre"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required="" placeholder="Tipo de habitación">
+                            <p class="mt-2 text-sm text-red-600 dark:text-red-500">El campo es obligatorio</p>
+                        </div>
+                    </div>
+                    <div class="grid gap-6 mb-6 md:grid-cols-3">
+                        <div>
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ciudad</label>
+                            <input value="" type="text" id="ciudad"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required="" placeholder="Acomodación">
+                            <p class="mt-2 text-sm text-red-600 dark:text-red-500">El campo es obligatorio</p>
+                        </div>
+                        
+                    </div>
+                    <button type="submit"
+                        class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!--  -->
         
         <!-- CONTENT EDITAR HABITACIONES -->
         <div id="EditarHab" class="p-10" hidden>
@@ -2214,6 +2216,7 @@
         var hotel3 = document.getElementById("hotel3");
         var hotel4 = document.getElementById("hotel4");
         var hotel5 = document.getElementById("hotel5");
+        var crearhab = document.getElementById("crearhab");
         var ListHab = document.getElementById("ListHab");
         var E1 = document.getElementById("E1");
         var E2 = document.getElementById("E2");
@@ -2231,6 +2234,7 @@
         var footer = document.getElementById("footer");
         var DetallesHab = document.getElementById("DetallesHab");
         var EditarHab = document.getElementById("EditarHab");
+        var crearh = document.getElementById("crearh");
 
         // Añadir un evento de clic al enlace
         prueba.addEventListener("click", function (e) {
@@ -2246,6 +2250,7 @@
             footer.hidden = true;
             DetallesHab.hidden = true;
             EditarHab.hidden = true;
+            crearh.hidden = true;
         });
 
         ml.addEventListener("click", function (e) {
@@ -2259,6 +2264,7 @@
             eliminar.hidden = true;
             detallesH1.hidden = true;
             DetallesHab.hidden = true;
+            crearh.hidden = true;
             EditarHab.hidden = true;
             footer.hidden = false;
         });
@@ -2275,6 +2281,7 @@
             detallesH1.hidden = true;
             DetallesHab.hidden = true;
             EditarHab.hidden = true;
+            crearh.hidden = true;
             footer.hidden = false;
         });
 
@@ -2290,6 +2297,7 @@
             detallesH1.hidden = true;        
             DetallesHab.hidden = true;
             EditarHab.hidden = true;
+            crearh.hidden = true;
             footer.hidden = false;    
         });
 
@@ -2305,6 +2313,7 @@
             detallesH1.hidden = true;
             DetallesHab.hidden = true;
             EditarHab.hidden = true;
+            crearh.hidden = true;
             footer.hidden = false;
         });
 
@@ -2319,6 +2328,7 @@
             eliminar.hidden = true;
             DetallesHab.hidden = true;
             EditarHab.hidden = true;
+            crearh.hidden = true;
             detallesH1.hidden = false;
             footer.hidden = false;
         });
@@ -2334,6 +2344,7 @@
             eliminar.hidden = true;        
             DetallesHab.hidden = true;
             EditarHab.hidden = true;
+            crearh.hidden = true;
             detallesH1.hidden = false;
             footer.hidden = false;    
         });
@@ -2349,6 +2360,7 @@
             eliminar.hidden = true;       
             DetallesHab.hidden = true;
             EditarHab.hidden = true;
+            crearh.hidden = true;
             detallesH1.hidden = false;
             footer.hidden = false;     
         });
@@ -2364,6 +2376,7 @@
             eliminar.hidden = true;
             DetallesHab.hidden = true;
             EditarHab.hidden = true;
+            crearh.hidden = true;
             detallesH1.hidden = false;
             footer.hidden = false;
         });
@@ -2378,11 +2391,12 @@
             editar.hidden = true;
             eliminar.hidden = true;    
             DetallesHab.hidden = true;
+            crearh.hidden = true;
             detallesH1.hidden = false;
             footer.hidden = false;        
             EditarHab.hidden = true;
         });
-        
+               
         ListHab.addEventListener("click", function (e) {
             // Evitar que el enlace se comporte como un enlace normal
             e.preventDefault();
@@ -2394,7 +2408,24 @@
             eliminar.hidden = true;
             detallesH1.hidden = true;
             EditarHab.hidden = true;
+            crearh.hidden = true;
             DetallesHab.hidden = false;
+            footer.hidden = false;
+        });
+        
+        crearhab.addEventListener("click", function (e) {
+            // Evitar que el enlace se comporte como un enlace normal
+            e.preventDefault();
+            // Cambiar el atributo hidden del primer elemento a false
+            // inf.hidden = true;
+            listado.hidden = true;
+            crear.hidden = true;
+            editar.hidden = true;
+            eliminar.hidden = true;
+            detallesH1.hidden = true;
+            DetallesHab.hidden = true;
+            EditarHab.hidden = true;
+            crearh.hidden = false;
             footer.hidden = false;
         });
 
@@ -2409,6 +2440,7 @@
             eliminar.hidden = true;
             detallesH1.hidden = true;
             DetallesHab.hidden = true;
+            crearh.hidden = true;
             EditarHab.hidden = false;
             footer.hidden = false;
         });
@@ -2424,6 +2456,7 @@
             eliminar.hidden = true;
             detallesH1.hidden = true;
             DetallesHab.hidden = true;
+            crearh.hidden = true;
             EditarHab.hidden = false;
             footer.hidden = false;
         });
@@ -2439,6 +2472,7 @@
             eliminar.hidden = true;
             detallesH1.hidden = true;
             DetallesHab.hidden = true;
+            crearh.hidden = true;
             EditarHab.hidden = false;
             footer.hidden = false;
         });
@@ -2454,6 +2488,7 @@
             eliminar.hidden = true;
             detallesH1.hidden = true;
             DetallesHab.hidden = true;
+            crearh.hidden = true;
             EditarHab.hidden = false;
             footer.hidden = false;
         });
@@ -2469,6 +2504,7 @@
             eliminar.hidden = true;
             detallesH1.hidden = true;
             DetallesHab.hidden = true;
+            crearh.hidden = true;
             EditarHab.hidden = false;
             footer.hidden = false;
         });
@@ -2483,6 +2519,7 @@
             editar.hidden = true;
             eliminar.hidden = true;
             detallesH1.hidden = true;
+            crearh.hidden = true;
             DetallesHab.hidden = false;
             EditarHab.hidden = true;
             footer.hidden = false;
